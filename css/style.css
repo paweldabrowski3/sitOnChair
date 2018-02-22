@@ -1,0 +1,24 @@
+@import url("_variables.css");
+@import url("_global-class.css");
+@import url("_layout.css");
+@import url("_header.css");
+@import url("_main-banner.css");
+@import url("_main-informations.css");
+@import url("_main-prices.css");
+@import url("_application.css"); /*wklejony import ze stylami*/
+@import url("_form.css");
+@import url("_main-contact-form.css");
+@import url("_nav.css");
+@import url("_sociall.css");
+
+/*
+w CSS trzeba importowac pliki na gorze css
+powyższe podejście nie jest najlepsze, bo powoduje, ze przegladarka
+musi robic dodatkowe zapytania o powyzsze pliki. W SCSS będzie to wygladalo
+podobnie, ale w rezultacie otrzymamy 1 plik css, bo kompilator
+podobne includy polaczyc w calosc. Dodatkowo tam importy będą mogły być w dowolnym
+momencie.
+Ogólnie podzieliłem te style specjalnie na oddzielne pliki, by potem
+przenoszenie tego na scss było jak najłatwiejsze.
+
+*/
